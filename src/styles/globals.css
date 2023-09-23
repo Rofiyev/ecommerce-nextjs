@@ -74,6 +74,7 @@ span.text-red {
 .logo {
   color: gray;
   font-size: 18px;
+  font-weight: 600;
 }
 .cart-icon {
   font-size: 25px;
@@ -114,7 +115,7 @@ span.text-red {
   color: #324d67;
 }
 .product-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.06);
 }
 .product-image {
   object-fit: cover;

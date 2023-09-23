@@ -18,6 +18,7 @@ export interface IProduct {
   name: string;
   _id: string;
   slug: { _type: string; current: string };
+  quantity?: number | undefined;
 }
 
 export interface IHeroBanner {
