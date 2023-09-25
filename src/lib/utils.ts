@@ -8,7 +8,7 @@ interface IDefault {
 }
 
 export const runFireworks = () => {
-  var duration: number = 5 * 1000;
+  var duration: number = 5 * 3000;
   var animationEnd: number = Date.now() + duration;
   var defaults: IDefault = {
     startVelocity: 30,

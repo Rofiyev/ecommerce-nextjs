@@ -20,6 +20,9 @@ interface StateContextProps {
   onAdd: (product: IProduct, quantity: number) => void;
   toggleCartItemQuantity: (value: string, id: string) => void;
   onRemove: (product: IProduct) => void;
+  setCartItems: (value: [] | IProduct[]) => void;
+  setTotalPrice: (value: number) => void;
+  setTotalQuantities: (value: number) => void;
 }
 
 const MyContext = createContext<StateContextProps | undefined>(undefined);
@@ -125,6 +128,9 @@ export const StateContext: React.FC<{ children: ReactNode }> = ({
         onAdd,
         toggleCartItemQuantity,
         onRemove,
+        setCartItems,
+        setTotalPrice,
+        setTotalQuantities
       }}
     >
       {children}
@@ -152,6 +158,9 @@ export const useStateContext = () => {
     onAdd,
     toggleCartItemQuantity,
     onRemove,
+    setCartItems,
+    setTotalPrice,
+    setTotalQuantities
   } = context;
 
   return {
@@ -166,5 +175,8 @@ export const useStateContext = () => {
     onAdd,
     toggleCartItemQuantity,
     onRemove,
+    setCartItems,
+    setTotalPrice,
+    setTotalQuantities
   };
 };
