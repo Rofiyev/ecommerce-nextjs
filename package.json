@@ -26,5 +26,8 @@
     "react-icons": "^4.11.0",
     "stripe": "^13.6.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.1"
   }
 }
