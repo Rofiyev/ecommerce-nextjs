@@ -72,9 +72,9 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
-  font-size: 18px;
-  font-weight: 600;
+  width: 70px;
+  height: 40px;
+  object-fit: contain;
 }
 .cart-icon {
   font-size: 25px;

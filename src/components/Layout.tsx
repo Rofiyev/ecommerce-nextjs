@@ -8,7 +8,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
       <Head>
         <title>Rof1yev - Shopping</title>
       </Head>
-      <header>
+      <header className="main-container">
         <Navbar />
       </header>
       <main className="main-container">{children}</main>
