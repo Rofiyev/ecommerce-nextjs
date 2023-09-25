@@ -12,7 +12,6 @@ import Link from "next/link";
 import { useRef } from "react";
 import { IProduct } from "../interface";
 import getStripe from "../lib/getStripe";
-import { NextApiRequest, NextApiResponse } from "next";
 
 const Cart = () => {
   const cartRef = useRef<HTMLDivElement>(null);
