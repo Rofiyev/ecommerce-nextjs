@@ -19,7 +19,12 @@ const ProductDetails: React.FC<ProductDetailsPage> = ({
   const { image, name, detail, price } = product;
   const [index, setIndex] = useState<number>(0);
 
-  const { decQty, incQty, qty, onAdd } = useStateContext();
+  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const handleBuyNow = () => {
+    onAdd(product, qty);
+    setShowCart(true);
+  };
 
   return (
     <div>
@@ -81,7 +86,7 @@ const ProductDetails: React.FC<ProductDetailsPage> = ({
             >
               Add to Cart
             </button>
-            <button type="button" className="buy-now">
+            <button type="button" className="buy-now" onClick={handleBuyNow}>
               Buy now
             </button>
           </div>
